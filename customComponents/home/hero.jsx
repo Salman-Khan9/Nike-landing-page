@@ -86,6 +86,8 @@ export default function Hero() {
             <div className="flex flex-col z-0 relative">
               <div className="relative w-[140px] h-[140px]  md:w-[240px] md:h-[240px] lg:w-[300px] lg:h-[300px]">
                 <Image
+                  quality={10}
+                  priority={true}
                   src={data.color1}
                   objectFit="fill"
                   layout="fill"
@@ -94,6 +96,8 @@ export default function Hero() {
               </div>
               <div className="relative  w-[140px] h-[140px]  md:w-[240px] md:h-[240px] lg:w-[300px] lg:h-[300px]">
                 <Image
+                  quality={10}
+                  priority={true}
                   src={data.color2}
                   objectFit="fill"
                   layout="fill"
