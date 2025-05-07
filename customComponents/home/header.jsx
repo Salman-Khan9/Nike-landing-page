@@ -6,7 +6,7 @@ import Popup from "../popup/popup";
 export default function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <div className="flex justify-between px-2 md:px-0 md:justify-evenly items-center pt-3 md:pt-5">
+    <div className=" flex justify-between px-2 md:px-0 md:justify-evenly items-center pt-3 md:pt-5">
       <div
         onClick={() => setOpen(true)}
         className="relative w-[30px] h-[30px] md:w-[70px] md:h-[70px] "
@@ -16,6 +16,7 @@ export default function Header() {
           alt="nike"
           objectFit="fill"
           layout="fill"
+          className="dark:bg-white dark:rounded-full dark:mix-blend-multiply "
         />
       </div>
       <div className="md:hidden flex text-[20px] font-bold">Nike</div>

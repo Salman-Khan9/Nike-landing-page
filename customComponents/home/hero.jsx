@@ -51,7 +51,7 @@ export default function Hero() {
           </p>
           <button
             onClick={() => setOpen(true)}
-            className="py-2 px-4 md:py-4 md:px-12 bg-black rounded-xl text-white  md:text-[22px] font-semibold md:font-bold"
+            className="py-2 px-4 md:py-4 md:px-12 bg-black rounded-xl text-white  md:text-[22px] font-semibold md:font-bold dark:bg-white dark:text-black"
           >
             Buy Now
           </button>
@@ -79,6 +79,7 @@ export default function Hero() {
             </div>
           </motion.div>
           <motion.div
+            key={data.bg}
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1, transition: { duration: 1.5 } }}
           >
